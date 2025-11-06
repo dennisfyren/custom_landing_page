@@ -1,10 +1,15 @@
 html {
-  background-color: #0d0a1f;
+  background-color: black;
   color: white;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   color: white;
   display: flex;
@@ -28,19 +33,29 @@ html {
   justify-content: space-around;
   padding-right: 15%;
   padding-left: 15%;
-  padding-bottom: 5%;
-  
+  padding-bottom: 0;
 }
 
+.links div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+  padding: 1em;
+  padding-bottom: 1em;
+  border-radius: 0.5em;
+  
+}
 .links a {
+  text-decoration: none;
+  color: white;
+}
+
+.links p {
   text-decoration: none;
   font-size: 1.2em;
   color: white;
   flex-grow: 0;
-}
-
-.content p {
-  background-color: black;
-  position: absolute;
-  top: 250px;
+  padding: 0.3em;
+  padding-bottom: 0;
 }
